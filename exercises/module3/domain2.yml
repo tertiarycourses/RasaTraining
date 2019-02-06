@@ -1,0 +1,49 @@
+intents:
+  - greet
+  - say_name
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text  
+
+actions:
+  - utter_thanks
+  - utter_greet
+  - utter_ask_name
+  - utter_help
+  - utter_goodbye
+  - utter_product
+  - utter_start
+  - utter_default
+
+templates:
+
+  utter_ask_name:
+  - text: "Hi, What is your name?"
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_help:
+  - text: "How can I help you?"
+  - text: "How can I assist you?"
+  - text: "Anything I can help?" 
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_product:
+  - text: "Stock is available. Would you like to buy?"
+
+  utter_start:
+  - text: "Hi good day. I am an bot powered by Rasa."
+
+  utter_default:
+  - text: "We don't have the answer right now."
+

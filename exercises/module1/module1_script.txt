@@ -1,0 +1,39 @@
+## Create a virtual environment
+
+virtualenv rasa
+cd rasa
+source ./bin/activate
+
+## Install Rasa
+pip install rasa
+sudo pip3 install rasa
+
+## Install Dependences
+pip install sklearn_crfsuite
+pip install spacy
+
+# Download English model
+python -m spacy download en
+sudo python -m spacy download en
+
+# Download Rasa Starter Pack
+https://github.com/RasaHQ/starter-pack-rasa-stack
+
+
+# Train the Rasa NLU model by running:
+make train-nlu
+
+#Train the Rasa Core model by running:
+make train-core
+
+# In a new terminal start the server for the custom action by running:
+make action-server
+
+#Test the assistant by running:
+make cmdline
+
+## To deactivate the virtual enviroment
+deactive 
+
+
+

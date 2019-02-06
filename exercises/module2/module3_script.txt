@@ -1,0 +1,12 @@
+# To train the Rasa NLU, 
+python -m rasa_core.train -d domain.yml -s stories.md -o models/dialogue
+
+
+# To test the Rasa Core, 
+python -m rasa_core.run -d models/dialogue
+/help
+/greet
+
+# Slot Testing
+/say_name{"name":"Ally"} 
+
