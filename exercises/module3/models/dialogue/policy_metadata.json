@@ -5,41 +5,28 @@
         "name"
       ]
     },
-    "utter_ask_name": {
-      "slots": []
-    },
     "utter_start": {
       "slots": []
     },
-    "utter_thanks": {
-      "slots": []
-    },
-    "utter_help": {
+    "utter_bye": {
       "slots": []
     },
     "utter_greet": {
-      "slots": []
-    },
-    "utter_goodbye": {
       "slots": []
     }
   },
   "python": "3.6.5",
   "max_histories": [
     5,
-    null,
-    5,
-    2
+    3
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
-    "rasa_core.policies.keras_policy.KerasPolicy",
-    "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.form_policy.FormPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190206-155928",
-  "rasa_core": "0.13.1",
+  "trained_at": "20190208-215706",
+  "rasa_core": "0.13.2",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"
 }
